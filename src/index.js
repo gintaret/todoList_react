@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root') //cia pasizymi is index.html elementa ir i ji renderina App komponenta
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// App komponentas jau yra React dalykas
+// I viena index.html psl isspausdinu viska, kas ieina i App komponenta
+// Labai svarbu, kad App butu jau sulinkinta su puslapiu (index.html), jeigu norime issispausdinti, kaip atrodo musu psl
